@@ -6,5 +6,5 @@ COPY . /app
 
 WORKDIR /app
 
-RUN poetry install
+RUN poetry install --without dev
 CMD ["poetry", "run", "python", "-m", "app.main"]

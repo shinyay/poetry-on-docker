@@ -4,6 +4,19 @@ Overview
 
 ## Description
 
+Project structure
+
+```shell
+.
+├── Dockerfile
+├── README.md
+├── annapurna
+│   ├── __init__.py
+│   └── main.py
+├── poetry.lock
+└── pyproject.toml
+```
+
 ## Demo
 
 ## Features

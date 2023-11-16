@@ -8,9 +8,10 @@ ENV POETRY_NO_INTERACTION=1 \
     POETRY_CACHE_DIR=/tmp/poetry_cache
 
 RUN mkdir -p /app
-COPY . /app
-
 WORKDIR /app
+COPY pyproject.toml poetry.lock ./
+RUN touch README.md
+
 RUN poetry install --without dev
 
 FROM python:3.12.0-slim as base

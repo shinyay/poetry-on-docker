@@ -10,7 +10,7 @@ Project structure
 .
 ├── Dockerfile
 ├── README.md
-├── annapurna
+├── sample
 │   ├── __init__.py
 │   └── main.py
 ├── poetry.lock

@@ -1,4 +1,4 @@
-FROM python:3.12.0-slim as builder
+FROM python:3.12.0-buster as builder
 
 RUN pip install poetry
 
@@ -16,11 +16,13 @@ RUN touch README.md
 RUN --mount=type=cache,target=$POETRY_CACHE_DIR poetry install --without dev --no-root
 
 
-FROM python:3.12.0-slim as base
+FROM python:3.12.0-slim-buster as runtime
 
-COPY --from=builder /app /app
+ENV VIRTUAL_ENV=/app/.venv \
+    PATH="/app/.venv/bin:$PATH"
 
-WORKDIR /app
-ENV PATH="/app/.venv/bin:$PATH"
+COPY --from=builder ${VIRTUAL_ENV} ${VIRTUAL_ENV}
+
+COPY app ./app
 
 CMD ["python", "-m", "app.main"]

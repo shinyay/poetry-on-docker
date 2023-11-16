@@ -10,7 +10,7 @@ Project structure
 .
 ├── Dockerfile
 ├── README.md
-├── sample
+├── app
 │   ├── __init__.py
 │   └── main.py
 ├── poetry.lock

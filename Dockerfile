@@ -1,12 +1,17 @@
-FROM python:3.12.0-slim
+FROM python:3.12.0-slim as builder
 
 RUN pip install poetry
 RUN mkdir -p /app
 COPY . /app
 
 WORKDIR /app
+RUN poetry install --without dev
 
+FROM python:3.12.0-slim as base
+
+COPY --from=builder /app /app
+
+WORKDIR /app
 ENV PATH="/app/.venv/bin:$PATH"
 
-RUN poetry install --without dev
-CMD ["poetry", "run", "python", "-m", "app.main"]
+CMD ["python", "-m", "app.main"]

@@ -31,7 +31,6 @@ docker run \
   'pip install poetry && poetry new my_python_project && cd $_ && poetry install'
 ```
 
-
 ## Demo
 
 ## Features

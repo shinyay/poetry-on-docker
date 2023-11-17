@@ -25,7 +25,7 @@ At first, create a poetry prject.
 docker run \
   --volume $(pwd):/app \
   --workdir /app \
-  python:3.12.0-slim-buster bash -c \
+  python:3.12.0-slim-bookworm bash -c \
   'pip install poetry && poetry new my_python_project && cd $_ && poetry install'
 ```
 

@@ -6,6 +6,10 @@ This repository shows how to create a `Poetry` environment on the **Docker**.
 
 ### Project Structure
 
+1. Poertry project structure
+
+At first, create a poetry prject.
+
 ```shell
 .
 ├── Dockerfile

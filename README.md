@@ -23,6 +23,7 @@ At first, create a poetry prject.
 
 ```shell
 docker run \
+  --rm
   --volume $(pwd):/app \
   --workdir /app \
   python:3.12.0-slim-bookworm bash -c \

@@ -1,4 +1,4 @@
-FROM python:3.12.0-buster as builder
+FROM python:3.12.0-bookworm as builder
 
 RUN pip install poetry
 

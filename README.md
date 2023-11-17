@@ -4,7 +4,7 @@ This repository shows how to create a `Poetry` environment on the **Docker**.
 
 ## Description
 
-Project structure
+### Project Structure
 
 ```shell
 .

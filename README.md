@@ -21,6 +21,15 @@ This repository shows how to create a `Poetry` environment on the **Docker**.
 
 At first, create a poetry prject.
 
+```shell
+docker run \
+  --volume $(pwd):/app \
+  --workdir /app \
+  python:3.12.0-slim-buster bash -c \
+  'pip install poetry && poetry new my_python_project && cd $_ && poetry install'
+```
+
+
 ## Demo
 
 ## Features

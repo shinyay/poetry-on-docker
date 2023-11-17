@@ -20,6 +20,7 @@ This repository shows how to create a `Poetry` environment on the **Docker**.
 #### 1. Poertry project structure
 
 At first, create a poetry prject.
+You should create it with the following command. It allows you not to install poetry on your PC.
 
 ```shell
 docker run \

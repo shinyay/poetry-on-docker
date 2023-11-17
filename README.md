@@ -1,6 +1,6 @@
 # Poetry on Docker
 
-Overview
+This repository shows how to create a `Poetry` environment on the **Docker**.
 
 ## Description
 

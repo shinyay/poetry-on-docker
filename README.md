@@ -24,7 +24,7 @@ You should create it with the following command. It allows you not to install po
 
 ```shell
 docker run \
-  --rm
+  --rm \
   --volume $(pwd):/app \
   --workdir /app \
   python:3.12.0-slim-bookworm bash -c \

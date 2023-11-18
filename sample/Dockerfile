@@ -23,6 +23,6 @@ ENV VIRTUAL_ENV=/app/.venv \
 
 COPY --from=builder ${VIRTUAL_ENV} ${VIRTUAL_ENV}
 
-COPY app ./app
+COPY my_python_project ./app
 
 CMD ["python", "-m", "app.main"]

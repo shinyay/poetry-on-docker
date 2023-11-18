@@ -31,6 +31,8 @@ docker run \
   'pip install poetry && poetry new my_python_project && cd $_ && poetry install'
 ```
 
+#### 2. `Dockerfile` and `.dockerignore``
+
 ## Demo
 
 ## Features

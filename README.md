@@ -33,6 +33,8 @@ docker run \
 
 #### 2. `Dockerfile` and `.dockerignore`
 
+The following `Dockerfile` create a bulding environment with **Poetry** and a runtime environment.
+
 <details>
 <summary>Dockerfile</summary>
 
@@ -67,8 +69,11 @@ COPY my_python_project ./app
 CMD ["python", "-m", "app.main"]
 ```
 
+<<<<<<< HEAD
 </details>
 
+=======
+>>>>>>> 723e8ad44e208258f8a6454014cb9f13dd865bc0
 ## Demo
 
 ## Features

@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 
+[tool.poetry.scripts]
+my-app = "my_python_project:main"
 
 [build-system]
 requires = ["poetry-core"]

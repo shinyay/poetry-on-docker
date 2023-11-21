@@ -69,11 +69,8 @@ COPY my_python_project ./app
 CMD ["python", "-m", "app.main"]
 ```
 
-<<<<<<< HEAD
 </details>
 
-=======
->>>>>>> 723e8ad44e208258f8a6454014cb9f13dd865bc0
 ## Demo
 
 ## Features

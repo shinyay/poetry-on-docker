@@ -33,6 +33,10 @@ docker run \
 
 #### 2. Write an App and Configurations
 
+You want to add the following the git ignore configuration for Python.
+
+- [Python.gitignore](https://github.com/github/gitignore/blob/main/Python.gitignore)
+
 #### 3. `Dockerfile` and `.dockerignore`
 
 The following `Dockerfile` create a bulding environment with **Poetry** and a runtime environment.

@@ -31,7 +31,9 @@ docker run \
   'pip install poetry && poetry new my_python_project && cd $_ && poetry install'
 ```
 
-#### 2. `Dockerfile` and `.dockerignore`
+#### 2. Write an App and Configurations
+
+#### 3. `Dockerfile` and `.dockerignore`
 
 The following `Dockerfile` create a bulding environment with **Poetry** and a runtime environment.
 
